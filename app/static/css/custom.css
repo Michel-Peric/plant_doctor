@@ -1,0 +1,343 @@
+/**
+ * Plant Doctor - Custom CSS
+ * Bootstrap 5 overrides + custom components
+ */
+
+/* ===========================================
+   CSS Variables (Design System)
+   =========================================== */
+:root {
+    /* Colors - Plant Doctor Palette */
+    --pd-primary: #4A6741;
+    --pd-secondary: #8FBC8F;
+    --pd-success: #2E7D32;
+    --pd-warning: #F9A825;
+    --pd-danger: #C62828;
+    --pd-light: #F5F5F5;
+    --pd-dark: #2C3E2D;
+    --pd-white: #FFFFFF;
+
+    /* Spacing */
+    --pd-space-1: 4px;
+    --pd-space-2: 8px;
+    --pd-space-3: 16px;
+    --pd-space-4: 24px;
+    --pd-space-5: 32px;
+    --pd-space-6: 48px;
+
+    /* Border radius */
+    --pd-radius: 1rem;
+    --pd-radius-sm: 0.75rem;
+    --pd-radius-lg: 1.5rem;
+
+    /* Shadows */
+    --pd-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --pd-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    /* Transitions */
+    --pd-transition: 200ms ease-out;
+}
+
+/* ===========================================
+   Bootstrap Overrides
+   =========================================== */
+
+/* Primary color override */
+.btn-primary {
+    background-color: var(--pd-primary);
+    border-color: var(--pd-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #3d5636;
+    border-color: #3d5636;
+}
+
+.btn-outline-primary {
+    color: var(--pd-primary);
+    border-color: var(--pd-primary);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: var(--pd-primary);
+    border-color: var(--pd-primary);
+    color: white;
+}
+
+.text-primary {
+    color: var(--pd-primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--pd-primary) !important;
+}
+
+/* Cards */
+.card {
+    border-radius: var(--pd-radius);
+    box-shadow: var(--pd-shadow);
+    border: none;
+}
+
+/* Buttons - Touch friendly */
+.btn {
+    min-height: 44px;
+    padding: 0.625rem 1.25rem;
+    border-radius: var(--pd-radius-sm);
+    font-weight: 500;
+    transition: all var(--pd-transition);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Badge rounded */
+.badge.rounded-circle {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    padding: var(--pd-space-3) 0;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    color: var(--pd-primary) !important;
+}
+
+.nav-link {
+    color: var(--pd-dark);
+    padding: var(--pd-space-2) var(--pd-space-3);
+    border-radius: var(--pd-radius-sm);
+    transition: all var(--pd-transition);
+}
+
+.nav-link:hover {
+    background-color: var(--pd-light);
+    color: var(--pd-primary);
+}
+
+/* ===========================================
+   Custom Components
+   =========================================== */
+
+/* Upload Zone */
+.upload-zone {
+    border: 2px dashed var(--pd-secondary) !important;
+    background-color: var(--pd-white);
+    cursor: pointer;
+    transition: all var(--pd-transition);
+}
+
+.upload-zone:hover,
+.upload-zone:focus {
+    border-color: var(--pd-primary) !important;
+    background-color: rgba(74, 103, 65, 0.02);
+    outline: none;
+}
+
+.upload-zone:focus {
+    box-shadow: 0 0 0 3px rgba(74, 103, 65, 0.25);
+}
+
+.upload-zone.drag-over {
+    border-color: var(--pd-primary) !important;
+    border-style: solid !important;
+    background-color: rgba(74, 103, 65, 0.05);
+}
+
+.upload-zone.is-loading {
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.upload-zone.is-error {
+    border-color: var(--pd-danger) !important;
+}
+
+/* Heatmap Overlay */
+.heatmap-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* Let clicks pass through */
+    transition: opacity var(--pd-transition);
+}
+
+/* Leaf Loader Animation */
+.leaf-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaf-loader .leaf-icon {
+    font-size: 3rem;
+    color: var(--pd-primary);
+    animation: leaf-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes leaf-pulse {
+
+    0%,
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1) rotate(5deg);
+        opacity: 0.8;
+    }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .leaf-loader .leaf-icon {
+        animation: none;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===========================================
+   Utility Classes
+   =========================================== */
+
+.border-dashed {
+    border-style: dashed !important;
+}
+
+/* ===========================================
+   Responsive Adjustments
+   =========================================== */
+
+/* Mobile-first base styles are already in place */
+
+/* Small devices (576px and up) */
+@media (min-width: 576px) {
+    .upload-zone .card-body {
+        padding: var(--pd-space-5);
+    }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* ===========================================
+   Focus States (Accessibility)
+   =========================================== */
+
+*:focus-visible {
+    outline: 2px solid var(--pd-primary);
+    outline-offset: 2px;
+}
+
+/* ===========================================
+   Body & Layout
+   =========================================== */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--pd-light);
+    color: var(--pd-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+}
+
+/* ===========================================
+   Detailed Disease Sheet (Tabs & Treatments)
+   =========================================== */
+
+/* Tabs Styling */
+.nav-tabs {
+    border-bottom: 2px solid var(--pd-light);
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: -2px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--pd-dark);
+    font-weight: 500;
+    padding: var(--pd-space-2) var(--pd-space-3);
+}
+
+.nav-tabs .nav-link:hover {
+    color: var(--pd-primary);
+    background-color: rgba(74, 103, 65, 0.05);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--pd-primary);
+    background-color: transparent;
+    border-bottom: 2px solid var(--pd-primary);
+}
+
+/* Treatment Cards */
+.treatment-card {
+    border: 1px solid transparent;
+    transition: transform var(--pd-transition);
+}
+
+.treatment-card:hover {
+    transform: translateY(-2px);
+}
+
+.treatment-bio {
+    background-color: rgba(46, 125, 50, 0.05);
+    /* Light Green bg */
+    border-left: 4px solid var(--pd-success) !important;
+}
+
+.treatment-chemical {
+    background-color: rgba(0, 0, 0, 0.02);
+    /* Light Grey bg */
+    border-left: 4px solid var(--pd-warning) !important;
+    /* Warning color for caution */
+}
+
+/* Typography for Details */
+.text-justify {
+    text-align: justify;
+}

@@ -1,0 +1,20 @@
+# Plant Doctor - Dependencies
+
+# Web Framework
+flask>=3.0.0
+
+# Image Processing
+pillow>=10.0.0
+numpy>=1.24.0
+
+# ML Inference (ONNX - recommended, lightweight)
+onnxruntime>=1.16.0
+
+# Development
+python-dotenv>=1.0.0
+
+# Training (optional - install separately if needed)
+# torch>=2.0.0
+# torch-directml  # For AMD GPU on Windows
+# torchvision>=0.15.0
+# onnx>=1.14.0  # For model export verification

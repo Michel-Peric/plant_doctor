@@ -1,0 +1,143 @@
+{
+  "apple": {
+    "plant_name": "Pommier",
+    "tips": [
+      "Taillez en hiver pour améliorer l'aération",
+      "Ramassez les feuilles mortes à l'automne",
+      "Appliquez de la bouillie bordelaise en préventif",
+      "Évitez l'arrosage par aspersion",
+      "Choisissez des variétés résistantes aux maladies"
+    ]
+  },
+  "blueberry": {
+    "plant_name": "Myrtillier",
+    "tips": [
+      "Maintenez un pH du sol entre 4.5 et 5.5",
+      "Paillez avec des aiguilles de pin",
+      "Arrosez régulièrement mais sans excès",
+      "Taillez les branches mortes en fin d'hiver",
+      "Protégez des oiseaux avec un filet"
+    ]
+  },
+  "cherry": {
+    "plant_name": "Cerisier",
+    "tips": [
+      "Taillez après la récolte pour éviter les maladies",
+      "Évitez les blessures sur l'écorce",
+      "Traitez préventivement contre la moniliose",
+      "Arrosez au pied, pas sur le feuillage",
+      "Récoltez les cerises rapidement à maturité"
+    ]
+  },
+  "corn": {
+    "plant_name": "Maïs",
+    "tips": [
+      "Pratiquez la rotation des cultures",
+      "Enfouissez les résidus après récolte",
+      "Choisissez des variétés adaptées à votre région",
+      "Semez quand le sol est bien réchauffé",
+      "Arrosez régulièrement en période de floraison"
+    ]
+  },
+  "grape": {
+    "plant_name": "Vigne",
+    "tips": [
+      "Taillez correctement pour aérer la végétation",
+      "Effeuilllez autour des grappes",
+      "Traitez préventivement contre le mildiou",
+      "Retirez les grappes momifiées",
+      "Protégez les plaies de taille"
+    ]
+  },
+  "orange": {
+    "plant_name": "Oranger",
+    "tips": [
+      "Protégez du gel en hiver",
+      "Surveillez les insectes vecteurs de maladies",
+      "Fertilisez régulièrement avec un engrais agrumes",
+      "Taillez légèrement pour aérer",
+      "Arrosez abondamment mais espacé"
+    ]
+  },
+  "peach": {
+    "plant_name": "Pêcher",
+    "tips": [
+      "Traitez contre la cloque au débourrement",
+      "Taillez en fin d'hiver",
+      "Éclaircissez les fruits pour de meilleures récoltes",
+      "Arrosez régulièrement en été",
+      "Protégez des gelées tardives au printemps"
+    ]
+  },
+  "pepper": {
+    "plant_name": "Poivron",
+    "tips": [
+      "Arrosez au pied, jamais sur le feuillage",
+      "Paillez pour conserver l'humidité",
+      "Tuteurez les plants chargés de fruits",
+      "Récoltez régulièrement pour stimuler la production",
+      "Évitez les excès d'azote"
+    ]
+  },
+  "potato": {
+    "plant_name": "Pomme de terre",
+    "tips": [
+      "Buttez régulièrement les plants",
+      "Évitez d'arroser le feuillage",
+      "Surveillez l'apparition du mildiou",
+      "Pratiquez la rotation (3-4 ans)",
+      "Récoltez par temps sec"
+    ]
+  },
+  "raspberry": {
+    "plant_name": "Framboisier",
+    "tips": [
+      "Taillez les cannes ayant fructifié",
+      "Paillez généreusement",
+      "Palissez les tiges sur des fils",
+      "Arrosez régulièrement en été",
+      "Surveillez les pucerons"
+    ]
+  },
+  "soybean": {
+    "plant_name": "Soja",
+    "tips": [
+      "Inoculez les semences avec des rhizobiums",
+      "Pratiquez la rotation des cultures",
+      "Semez dans un sol bien réchauffé",
+      "Désherbez en début de culture",
+      "Surveillez les maladies fongiques"
+    ]
+  },
+  "squash": {
+    "plant_name": "Courge",
+    "tips": [
+      "Espacez bien les plants pour l'aération",
+      "Arrosez au pied, pas sur les feuilles",
+      "Paillez généreusement",
+      "Pincez les tiges si nécessaire",
+      "Récoltez avant les premières gelées"
+    ]
+  },
+  "strawberry": {
+    "plant_name": "Fraisier",
+    "tips": [
+      "Paillez pour éviter le contact fruits/sol",
+      "Supprimez les stolons non désirés",
+      "Renouvelez les plants tous les 3 ans",
+      "Arrosez régulièrement mais modérément",
+      "Protégez des oiseaux avec un filet"
+    ]
+  },
+  "tomato": {
+    "plant_name": "Tomate",
+    "tips": [
+      "Arrosez au pied, jamais sur le feuillage",
+      "Paillez pour éviter les éclaboussures",
+      "Supprimez les gourmands régulièrement",
+      "Tuteurez solidement les plants",
+      "Traitez préventivement contre le mildiou",
+      "Pratiquez la rotation des cultures"
+    ]
+  }
+}

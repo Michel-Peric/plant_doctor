@@ -1,0 +1,1414 @@
+{
+  "Apple___Apple_scab": {
+    "id": "apple_scab",
+    "name": "Tavelure du pommier",
+    "plant": "Pommier",
+    "plant_id": "apple",
+    "is_healthy": false,
+    "description": "La tavelure est une maladie fongique causée par Venturia inaequalis. Elle provoque des taches brunes-olive sur les feuilles et les fruits.",
+    "causes": [
+      "Champignon Venturia inaequalis",
+      "Humidité élevée au printemps",
+      "Températures entre 15-25°C",
+      "Feuilles mortes infectées au sol"
+    ],
+    "symptoms": [
+      "Taches olive-brun sur les feuilles",
+      "Lésions veloutées sur les fruits",
+      "Déformation des fruits",
+      "Chute prématurée des feuilles"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Pulvériser avant et après la floraison",
+          "dosage": "20g/L d'eau"
+        },
+        {
+          "name": "Décoction de prêle",
+          "description": "Renforce les défenses naturelles",
+          "dosage": "1L de décoction pour 10L d'eau"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide à base de soufre",
+          "description": "Traitement préventif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Ramasser et détruire les feuilles tombées",
+      "Tailler les branches atteintes",
+      "Améliorer la circulation d'air"
+    ],
+    "follow_up_days": 14
+  },
+  "Apple___Black_rot": {
+    "id": "apple_black_rot",
+    "name": "Pourriture noire du pommier",
+    "plant": "Pommier",
+    "plant_id": "apple",
+    "is_healthy": false,
+    "description": "La pourriture noire est causée par le champignon Botryosphaeria obtusa. Elle affecte les feuilles, les branches et les fruits.",
+    "causes": [
+      "Champignon Botryosphaeria obtusa",
+      "Blessures sur l'arbre",
+      "Conditions chaudes et humides",
+      "Fruits momifiés non retirés"
+    ],
+    "symptoms": [
+      "Taches brunes avec cercles concentriques sur les feuilles",
+      "Chancres sur les branches",
+      "Pourriture noire des fruits",
+      "Fruits momifiés restant sur l'arbre"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Taille sanitaire",
+          "description": "Supprimer toutes les parties infectées",
+          "dosage": "N/A"
+        },
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif au débourrement",
+          "dosage": "20g/L d'eau"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide à base de captane",
+          "description": "Traitement curatif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer tous les fruits momifiés",
+      "Tailler les branches avec chancres",
+      "Désinfecter les outils de taille"
+    ],
+    "follow_up_days": 21
+  },
+  "Apple___Cedar_apple_rust": {
+    "id": "apple_cedar_rust",
+    "name": "Rouille grillagée du pommier",
+    "plant": "Pommier",
+    "plant_id": "apple",
+    "is_healthy": false,
+    "description": "Cette rouille est causée par Gymnosporangium juniperi-virginianae. Elle nécessite deux hôtes: le pommier et le genévrier.",
+    "causes": [
+      "Champignon Gymnosporangium juniperi-virginianae",
+      "Présence de genévriers à proximité",
+      "Printemps humide",
+      "Températures douces"
+    ],
+    "symptoms": [
+      "Taches jaune-orange sur les feuilles",
+      "Pustules orange sous les feuilles",
+      "Galles sur les fruits",
+      "Défoliation précoce"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Éliminer les genévriers proches",
+          "description": "Couper la chaîne de transmission",
+          "dosage": "N/A"
+        },
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif au printemps",
+          "dosage": "20g/L d'eau"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide à base de myclobutanil",
+          "description": "Traitement curatif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les feuilles infectées",
+      "Identifier les genévriers à proximité",
+      "Améliorer la ventilation"
+    ],
+    "follow_up_days": 14
+  },
+  "Apple___healthy": {
+    "id": "apple_healthy",
+    "name": "Pommier sain",
+    "plant": "Pommier",
+    "plant_id": "apple",
+    "is_healthy": true,
+    "description": "Votre pommier est en bonne santé! Continuez les bonnes pratiques d'entretien.",
+    "causes": [],
+    "symptoms": [],
+    "treatments": {
+      "bio": [],
+      "chemical": []
+    },
+    "immediate_actions": [],
+    "follow_up_days": 30
+  },
+  "Blueberry___healthy": {
+    "id": "blueberry_healthy",
+    "name": "Myrtillier sain",
+    "plant": "Myrtillier",
+    "plant_id": "blueberry",
+    "is_healthy": true,
+    "description": "Votre myrtillier est en bonne santé! Maintenez un sol acide et bien drainé.",
+    "causes": [],
+    "symptoms": [],
+    "treatments": {
+      "bio": [],
+      "chemical": []
+    },
+    "immediate_actions": [],
+    "follow_up_days": 30
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "id": "cherry_powdery_mildew",
+    "name": "Oïdium du cerisier",
+    "plant": "Cerisier",
+    "plant_id": "cherry",
+    "is_healthy": false,
+    "description": "L'oïdium est causé par Podosphaera clandestina. Il forme un feutrage blanc sur les feuilles.",
+    "causes": [
+      "Champignon Podosphaera clandestina",
+      "Temps chaud et sec",
+      "Nuits fraîches",
+      "Végétation dense"
+    ],
+    "symptoms": [
+      "Feutrage blanc poudreux sur les feuilles",
+      "Feuilles enroulées",
+      "Retard de croissance",
+      "Fruits déformés"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bicarbonate de soude",
+          "description": "Pulvériser sur les feuilles",
+          "dosage": "5g/L d'eau + quelques gouttes de savon noir"
+        },
+        {
+          "name": "Lait dilué",
+          "description": "Traitement préventif",
+          "dosage": "1 volume de lait pour 9 volumes d'eau"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Soufre mouillable",
+          "description": "Traitement curatif",
+          "dosage": "7.5g/L d'eau"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les feuilles très atteintes",
+      "Éclaircir la végétation",
+      "Éviter l'arrosage par aspersion"
+    ],
+    "follow_up_days": 10
+  },
+  "Cherry_(including_sour)___healthy": {
+    "id": "cherry_healthy",
+    "name": "Cerisier sain",
+    "plant": "Cerisier",
+    "plant_id": "cherry",
+    "is_healthy": true,
+    "description": "Votre cerisier est en bonne santé!",
+    "causes": [],
+    "symptoms": [],
+    "treatments": {
+      "bio": [],
+      "chemical": []
+    },
+    "immediate_actions": [],
+    "follow_up_days": 30
+  },
+  "Corn_(maize)___Cercospora_leaf_spot_Gray_leaf_spot": {
+    "id": "corn_gray_leaf_spot",
+    "name": "Cercosporiose du maïs",
+    "plant": "Maïs",
+    "plant_id": "corn",
+    "is_healthy": false,
+    "description": "La cercosporiose est causée par Cercospora zeae-maydis. Elle provoque des taches rectangulaires grises sur les feuilles.",
+    "causes": [
+      "Champignon Cercospora zeae-maydis",
+      "Résidus de culture infectés",
+      "Humidité élevée",
+      "Températures de 22-30°C"
+    ],
+    "symptoms": [
+      "Taches rectangulaires grises",
+      "Lésions parallèles aux nervures",
+      "Dessèchement des feuilles",
+      "Réduction du rendement"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Rotation des cultures",
+          "description": "Alterner avec des cultures non-hôtes",
+          "dosage": "N/A"
+        },
+        {
+          "name": "Enfouissement des résidus",
+          "description": "Réduire l'inoculum",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide à base de strobilurine",
+          "description": "Traitement préventif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les feuilles très atteintes",
+      "Améliorer la circulation d'air",
+      "Éviter l'irrigation par aspersion"
+    ],
+    "follow_up_days": 14
+  },
+  "Corn_(maize)___Common_rust_": {
+    "id": "corn_common_rust",
+    "name": "Rouille commune du maïs",
+    "plant": "Maïs",
+    "plant_id": "corn",
+    "is_healthy": false,
+    "description": "La rouille commune est causée par Puccinia sorghi. Elle forme des pustules orange-brun sur les feuilles.",
+    "causes": [
+      "Champignon Puccinia sorghi",
+      "Températures modérées (15-25°C)",
+      "Humidité élevée",
+      "Rosée prolongée"
+    ],
+    "symptoms": [
+      "Pustules orange-brun sur les deux faces des feuilles",
+      "Pustules alignées",
+      "Jaunissement des feuilles",
+      "Dessèchement prématuré"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Variétés résistantes",
+          "description": "Choisir des variétés tolérantes",
+          "dosage": "N/A"
+        },
+        {
+          "name": "Rotation des cultures",
+          "description": "Réduire la pression parasitaire",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide triazole",
+          "description": "Traitement curatif si forte pression",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Surveiller l'évolution",
+      "Améliorer l'aération de la parcelle"
+    ],
+    "follow_up_days": 7
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "id": "corn_northern_leaf_blight",
+    "name": "Helminthosporiose du maïs",
+    "plant": "Maïs",
+    "plant_id": "corn",
+    "is_healthy": false,
+    "description": "L'helminthosporiose est causée par Exserohilum turcicum. Elle provoque de grandes lésions en forme de cigare.",
+    "causes": [
+      "Champignon Exserohilum turcicum",
+      "Résidus de culture infectés",
+      "Temps frais et humide",
+      "Rosée prolongée"
+    ],
+    "symptoms": [
+      "Grandes lésions elliptiques (5-15 cm)",
+      "Taches en forme de cigare",
+      "Couleur gris-vert puis brun",
+      "Dessèchement des feuilles"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Enfouissement des résidus",
+          "description": "Détruire l'inoculum",
+          "dosage": "N/A"
+        },
+        {
+          "name": "Rotation des cultures",
+          "description": "Alterner avec des cultures non-hôtes",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide azoxystrobine",
+          "description": "Traitement préventif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Surveiller la progression",
+      "Éviter l'irrigation par aspersion"
+    ],
+    "follow_up_days": 10
+  },
+  "Corn_(maize)___healthy": {
+    "id": "corn_healthy",
+    "name": "Maïs sain",
+    "plant": "Maïs",
+    "plant_id": "corn",
+    "is_healthy": true,
+    "description": "Votre maïs est en bonne santé!",
+    "causes": [],
+    "symptoms": [],
+    "treatments": {
+      "bio": [],
+      "chemical": []
+    },
+    "immediate_actions": [],
+    "follow_up_days": 30
+  },
+  "Grape___Black_rot": {
+    "id": "grape_black_rot",
+    "name": "Pourriture noire de la vigne",
+    "plant": "Vigne",
+    "plant_id": "grape",
+    "is_healthy": false,
+    "description": "La pourriture noire est causée par Guignardia bidwellii. Elle affecte les feuilles, les tiges et les fruits.",
+    "causes": [
+      "Champignon Guignardia bidwellii",
+      "Temps chaud et humide",
+      "Fruits momifiés non retirés",
+      "Mauvaise aération"
+    ],
+    "symptoms": [
+      "Taches brunes avec bordure noire sur les feuilles",
+      "Baies qui brunissent et se momifient",
+      "Lésions sur les tiges",
+      "Points noirs (pycnides)"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif",
+          "dosage": "20g/L d'eau"
+        },
+        {
+          "name": "Taille et nettoyage",
+          "description": "Retirer tous les restes infectés",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide mancozèbe",
+          "description": "Traitement préventif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les baies momifiées",
+      "Supprimer les feuilles infectées",
+      "Améliorer l'aération"
+    ],
+    "follow_up_days": 14
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "id": "grape_esca",
+    "name": "Esca de la vigne",
+    "plant": "Vigne",
+    "plant_id": "grape",
+    "is_healthy": false,
+    "description": "L'esca est un complexe de maladies fongiques affectant le bois de la vigne. C'est une maladie grave.",
+    "causes": [
+      "Complexe fongique (Phaeomoniella, Phaeoacremonium, Fomitiporia)",
+      "Plaies de taille",
+      "Stress hydrique",
+      "Vignes âgées"
+    ],
+    "symptoms": [
+      "Feuilles tigrées (décoloration entre les nervures)",
+      "Dessèchement brutal (apoplexie)",
+      "Taches sur les baies",
+      "Bois nécrosé à la coupe"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Taille tardive",
+          "description": "Tailler en période sèche",
+          "dosage": "N/A"
+        },
+        {
+          "name": "Protection des plaies",
+          "description": "Appliquer un mastic cicatrisant",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Aucun traitement curatif efficace",
+          "description": "La prévention est essentielle",
+          "dosage": "N/A"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Ne pas arracher immédiatement",
+      "Surveiller l'évolution",
+      "Recéper si nécessaire"
+    ],
+    "follow_up_days": 30
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "id": "grape_leaf_blight",
+    "name": "Isariopsis de la vigne",
+    "plant": "Vigne",
+    "plant_id": "grape",
+    "is_healthy": false,
+    "description": "Cette maladie est causée par Pseudocercospora vitis. Elle provoque des taches foliaires.",
+    "causes": [
+      "Champignon Pseudocercospora vitis",
+      "Humidité élevée",
+      "Températures chaudes",
+      "Mauvaise ventilation"
+    ],
+    "symptoms": [
+      "Taches brunes angulaires sur les feuilles",
+      "Halo jaune autour des taches",
+      "Défoliation précoce",
+      "Feuilles sèches"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif",
+          "dosage": "15-20g/L d'eau"
+        },
+        {
+          "name": "Améliorer l'aération",
+          "description": "Effeuillage modéré",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide de contact",
+          "description": "Traitement curatif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les feuilles infectées",
+      "Améliorer la circulation d'air",
+      "Éviter l'humidité stagnante"
+    ],
+    "follow_up_days": 14
+  },
+  "Grape___healthy": {
+    "id": "grape_healthy",
+    "name": "Vigne saine",
+    "plant": "Vigne",
+    "plant_id": "grape",
+    "is_healthy": true,
+    "description": "Votre vigne est en bonne santé!",
+    "causes": [],
+    "symptoms": [],
+    "treatments": {
+      "bio": [],
+      "chemical": []
+    },
+    "immediate_actions": [],
+    "follow_up_days": 30
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "id": "orange_huanglongbing",
+    "name": "Huanglongbing (Greening des agrumes)",
+    "plant": "Oranger",
+    "plant_id": "orange",
+    "is_healthy": false,
+    "description": "Le HLB est une maladie bactérienne dévastatrice transmise par le psylle asiatique des agrumes. C'est l'une des maladies les plus graves des agrumes.",
+    "causes": [
+      "Bactérie Candidatus Liberibacter",
+      "Transmission par le psylle des agrumes",
+      "Greffage de matériel infecté",
+      "Pas de traitement curatif"
+    ],
+    "symptoms": [
+      "Jaunissement asymétrique des feuilles",
+      "Fruits asymétriques et verts",
+      "Graines avortées",
+      "Déclin progressif de l'arbre"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Contrôle du psylle",
+          "description": "Éliminer le vecteur",
+          "dosage": "N/A"
+        },
+        {
+          "name": "Arrachage des arbres infectés",
+          "description": "Éviter la propagation",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Insecticide contre le psylle",
+          "description": "Contrôle du vecteur",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Confirmer le diagnostic",
+      "Signaler aux autorités phytosanitaires",
+      "Isoler l'arbre"
+    ],
+    "follow_up_days": 7
+  },
+  "Peach___Bacterial_spot": {
+    "id": "peach_bacterial_spot",
+    "name": "Tache bactérienne du pêcher",
+    "plant": "Pêcher",
+    "plant_id": "peach",
+    "is_healthy": false,
+    "description": "La tache bactérienne est causée par Xanthomonas arboricola pv. pruni. Elle affecte les feuilles, les rameaux et les fruits.",
+    "causes": [
+      "Bactérie Xanthomonas arboricola",
+      "Éclaboussures d'eau",
+      "Temps chaud et humide",
+      "Blessures"
+    ],
+    "symptoms": [
+      "Petites taches angulaires sur les feuilles",
+      "Trous dans les feuilles (criblure)",
+      "Taches noires sur les fruits",
+      "Chancres sur les rameaux"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif à l'automne",
+          "dosage": "20g/L d'eau"
+        },
+        {
+          "name": "Variétés résistantes",
+          "description": "Choisir des cultivars tolérants",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Cuivre + antibiotique agricole",
+          "description": "Usage réglementé",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Tailler les rameaux infectés",
+      "Ramasser les fruits tombés",
+      "Éviter l'irrigation par aspersion"
+    ],
+    "follow_up_days": 14
+  },
+  "Peach___healthy": {
+    "id": "peach_healthy",
+    "name": "Pêcher sain",
+    "plant": "Pêcher",
+    "plant_id": "peach",
+    "is_healthy": true,
+    "description": "Votre pêcher est en bonne santé!",
+    "causes": [],
+    "symptoms": [],
+    "treatments": {
+      "bio": [],
+      "chemical": []
+    },
+    "immediate_actions": [],
+    "follow_up_days": 30
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "id": "pepper_bacterial_spot",
+    "name": "Tache bactérienne du poivron",
+    "plant": "Poivron",
+    "plant_id": "pepper",
+    "is_healthy": false,
+    "description": "La tache bactérienne est causée par Xanthomonas campestris pv. vesicatoria. C'est une maladie commune des poivrons.",
+    "causes": [
+      "Bactérie Xanthomonas",
+      "Semences infectées",
+      "Éclaboussures d'eau",
+      "Temps chaud et humide"
+    ],
+    "symptoms": [
+      "Petites taches aqueuses sur les feuilles",
+      "Taches brunes avec halo jaune",
+      "Lésions sur les fruits",
+      "Défoliation"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif",
+          "dosage": "15g/L d'eau"
+        },
+        {
+          "name": "Rotation des cultures",
+          "description": "3 ans minimum",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Cuivre + mancozèbe",
+          "description": "Traitement préventif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les feuilles infectées",
+      "Éviter de mouiller le feuillage",
+      "Désinfecter les outils"
+    ],
+    "follow_up_days": 7
+  },
+  "Pepper,_bell___healthy": {
+    "id": "pepper_healthy",
+    "name": "Poivron sain",
+    "plant": "Poivron",
+    "plant_id": "pepper",
+    "is_healthy": true,
+    "description": "Votre poivron est en bonne santé!",
+    "causes": [],
+    "symptoms": [],
+    "treatments": {
+      "bio": [],
+      "chemical": []
+    },
+    "immediate_actions": [],
+    "follow_up_days": 30
+  },
+  "Potato___Early_blight": {
+    "id": "potato_early_blight",
+    "name": "Alternariose de la pomme de terre",
+    "plant": "Pomme de terre",
+    "plant_id": "potato",
+    "is_healthy": false,
+    "description": "L'alternariose est causée par Alternaria solani. Elle provoque des taches concentriques caractéristiques.",
+    "causes": [
+      "Champignon Alternaria solani",
+      "Temps chaud et humide",
+      "Alternance sec/humide",
+      "Plants stressés"
+    ],
+    "symptoms": [
+      "Taches brunes avec cercles concentriques",
+      "Aspect en cible",
+      "Jaunissement autour des taches",
+      "Dessèchement des feuilles"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif",
+          "dosage": "20g/L d'eau"
+        },
+        {
+          "name": "Purin d'ortie",
+          "description": "Renforce les défenses",
+          "dosage": "1L pour 10L d'eau"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide mancozèbe",
+          "description": "Traitement préventif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les feuilles infectées",
+      "Pailler le sol",
+      "Éviter l'arrosage par aspersion"
+    ],
+    "follow_up_days": 10
+  },
+  "Potato___Late_blight": {
+    "id": "potato_late_blight",
+    "name": "Mildiou de la pomme de terre",
+    "plant": "Pomme de terre",
+    "plant_id": "potato",
+    "is_healthy": false,
+    "description": "Le mildiou est causé par Phytophthora infestans. C'est la maladie la plus grave de la pomme de terre.",
+    "causes": [
+      "Oomycète Phytophthora infestans",
+      "Temps frais et humide",
+      "Rosée prolongée",
+      "Températures 10-20°C"
+    ],
+    "symptoms": [
+      "Taches huileuses gris-vert",
+      "Duvet blanc sous les feuilles",
+      "Pourriture rapide",
+      "Odeur caractéristique"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif régulier",
+          "dosage": "20g/L d'eau tous les 7-10 jours"
+        },
+        {
+          "name": "Variétés résistantes",
+          "description": "Choisir des cultivars tolérants",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide systémique",
+          "description": "En cas de forte pression",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Détruire immédiatement les plants infectés",
+      "Ne pas composter les débris",
+      "Traiter les plants voisins"
+    ],
+    "follow_up_days": 5
+  },
+  "Potato___healthy": {
+    "id": "potato_healthy",
+    "name": "Pomme de terre saine",
+    "plant": "Pomme de terre",
+    "plant_id": "potato",
+    "is_healthy": true,
+    "description": "Votre pomme de terre est en bonne santé!",
+    "causes": [],
+    "symptoms": [],
+    "treatments": {
+      "bio": [],
+      "chemical": []
+    },
+    "immediate_actions": [],
+    "follow_up_days": 30
+  },
+  "Raspberry___healthy": {
+    "id": "raspberry_healthy",
+    "name": "Framboisier sain",
+    "plant": "Framboisier",
+    "plant_id": "raspberry",
+    "is_healthy": true,
+    "description": "Votre framboisier est en bonne santé!",
+    "causes": [],
+    "symptoms": [],
+    "treatments": {
+      "bio": [],
+      "chemical": []
+    },
+    "immediate_actions": [],
+    "follow_up_days": 30
+  },
+  "Soybean___healthy": {
+    "id": "soybean_healthy",
+    "name": "Soja sain",
+    "plant": "Soja",
+    "plant_id": "soybean",
+    "is_healthy": true,
+    "description": "Votre soja est en bonne santé!",
+    "causes": [],
+    "symptoms": [],
+    "treatments": {
+      "bio": [],
+      "chemical": []
+    },
+    "immediate_actions": [],
+    "follow_up_days": 30
+  },
+  "Squash___Powdery_mildew": {
+    "id": "squash_powdery_mildew",
+    "name": "Oïdium des cucurbitacées",
+    "plant": "Courge",
+    "plant_id": "squash",
+    "is_healthy": false,
+    "description": "L'oïdium est causé par Podosphaera xanthii ou Erysiphe cichoracearum. C'est une maladie très fréquente.",
+    "causes": [
+      "Champignons Podosphaera ou Erysiphe",
+      "Temps chaud et sec",
+      "Nuits fraîches",
+      "Végétation dense"
+    ],
+    "symptoms": [
+      "Feutrage blanc sur les feuilles",
+      "Taches poudreuses",
+      "Jaunissement des feuilles",
+      "Dessèchement"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bicarbonate de soude",
+          "description": "Pulvériser sur les feuilles",
+          "dosage": "5g/L d'eau + savon noir"
+        },
+        {
+          "name": "Soufre",
+          "description": "Traitement préventif",
+          "dosage": "7.5g/L d'eau"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide soufre",
+          "description": "Traitement curatif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les feuilles très atteintes",
+      "Améliorer l'aération",
+      "Arroser au pied"
+    ],
+    "follow_up_days": 7
+  },
+  "Strawberry___Leaf_scorch": {
+    "id": "strawberry_leaf_scorch",
+    "name": "Brûlure des feuilles du fraisier",
+    "plant": "Fraisier",
+    "plant_id": "strawberry",
+    "is_healthy": false,
+    "description": "La brûlure des feuilles est causée par Diplocarpon earlianum. Elle provoque des taches violacées.",
+    "causes": [
+      "Champignon Diplocarpon earlianum",
+      "Humidité élevée",
+      "Éclaboussures d'eau",
+      "Plants denses"
+    ],
+    "symptoms": [
+      "Petites taches violacées",
+      "Coalescence des taches",
+      "Aspect brûlé des feuilles",
+      "Défoliation"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Paillage",
+          "description": "Éviter les éclaboussures",
+          "dosage": "N/A"
+        },
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif",
+          "dosage": "15g/L d'eau"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide captane",
+          "description": "Traitement curatif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les feuilles infectées",
+      "Pailler le sol",
+      "Espacer les plants"
+    ],
+    "follow_up_days": 14
+  },
+  "Strawberry___healthy": {
+    "id": "strawberry_healthy",
+    "name": "Fraisier sain",
+    "plant": "Fraisier",
+    "plant_id": "strawberry",
+    "is_healthy": true,
+    "description": "Votre fraisier est en bonne santé!",
+    "causes": [],
+    "symptoms": [],
+    "treatments": {
+      "bio": [],
+      "chemical": []
+    },
+    "immediate_actions": [],
+    "follow_up_days": 30
+  },
+  "Tomato___Bacterial_spot": {
+    "id": "tomato_bacterial_spot",
+    "name": "Tache bactérienne de la tomate",
+    "plant": "Tomate",
+    "plant_id": "tomato",
+    "is_healthy": false,
+    "description": "La tache bactérienne est causée par Xanthomonas campestris pv. vesicatoria. Elle affecte les feuilles et les fruits.",
+    "causes": [
+      "Bactérie Xanthomonas",
+      "Semences infectées",
+      "Éclaboussures d'eau",
+      "Temps chaud et humide"
+    ],
+    "symptoms": [
+      "Petites taches aqueuses",
+      "Taches brunes angulaires",
+      "Halo jaune",
+      "Gale sur les fruits"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif",
+          "dosage": "15g/L d'eau"
+        },
+        {
+          "name": "Rotation des cultures",
+          "description": "3 ans minimum",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Cuivre",
+          "description": "Traitement préventif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les feuilles infectées",
+      "Éviter d'arroser le feuillage",
+      "Désinfecter les outils"
+    ],
+    "follow_up_days": 7
+  },
+  "Tomato___Early_blight": {
+    "id": "tomato_early_blight",
+    "name": "Alternariose de la tomate",
+    "plant": "Tomate",
+    "plant_id": "tomato",
+    "is_healthy": false,
+    "description": "L'alternariose est causée par Alternaria solani. Elle provoque des taches caractéristiques en forme de cible.",
+    "causes": [
+      "Champignon Alternaria solani",
+      "Temps chaud et humide",
+      "Feuilles basses touchant le sol",
+      "Plants stressés"
+    ],
+    "symptoms": [
+      "Taches brunes avec cercles concentriques",
+      "Aspect en cible",
+      "Jaunissement du feuillage",
+      "Dessèchement progressif"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif régulier",
+          "dosage": "20g/L d'eau"
+        },
+        {
+          "name": "Purin de prêle",
+          "description": "Renforce les défenses",
+          "dosage": "1L pour 10L d'eau"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide mancozèbe",
+          "description": "Traitement préventif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les feuilles basses",
+      "Pailler le sol",
+      "Éviter l'arrosage par aspersion"
+    ],
+    "follow_up_days": 10
+  },
+  "Tomato___Late_blight": {
+    "id": "tomato_late_blight",
+    "name": "Mildiou de la tomate",
+    "plant": "Tomate",
+    "plant_id": "tomato",
+    "is_healthy": false,
+    "description": "Le mildiou est causé par Phytophthora infestans. C'est la maladie la plus redoutée de la tomate.",
+    "causes": [
+      "Oomycète Phytophthora infestans",
+      "Temps frais et humide",
+      "Rosée prolongée",
+      "Températures 10-20°C"
+    ],
+    "symptoms": [
+      "Taches huileuses gris-vert",
+      "Duvet blanc sous les feuilles",
+      "Pourriture rapide des tiges",
+      "Fruits bruns et pourris"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif tous les 7-10 jours",
+          "dosage": "20g/L d'eau"
+        },
+        {
+          "name": "Bicarbonate de potassium",
+          "description": "Alternative au cuivre",
+          "dosage": "5g/L d'eau"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide systémique",
+          "description": "En cas de forte attaque",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Arracher et brûler les plants atteints",
+      "Ne jamais composter",
+      "Traiter les plants voisins immédiatement"
+    ],
+    "follow_up_days": 3
+  },
+  "Tomato___Leaf_Mold": {
+    "id": "tomato_leaf_mold",
+    "name": "Cladosporiose de la tomate",
+    "plant": "Tomate",
+    "plant_id": "tomato",
+    "is_healthy": false,
+    "description": "La cladosporiose est causée par Passalora fulva (anciennement Cladosporium fulvum). Elle affecte principalement les cultures sous abri.",
+    "causes": [
+      "Champignon Passalora fulva",
+      "Humidité élevée (>85%)",
+      "Mauvaise ventilation",
+      "Cultures sous serre"
+    ],
+    "symptoms": [
+      "Taches jaunes sur la face supérieure",
+      "Feutrage olive-brun dessous",
+      "Feuilles qui s'enroulent",
+      "Défoliation"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Aération",
+          "description": "Réduire l'humidité",
+          "dosage": "N/A"
+        },
+        {
+          "name": "Bicarbonate de soude",
+          "description": "Traitement préventif",
+          "dosage": "5g/L d'eau"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide à base de soufre",
+          "description": "Traitement curatif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Améliorer la ventilation",
+      "Retirer les feuilles atteintes",
+      "Réduire l'arrosage"
+    ],
+    "follow_up_days": 7
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "id": "tomato_septoria",
+    "name": "Septoriose de la tomate",
+    "plant": "Tomate",
+    "plant_id": "tomato",
+    "is_healthy": false,
+    "description": "La septoriose est causée par Septoria lycopersici. Elle provoque de nombreuses petites taches rondes.",
+    "causes": [
+      "Champignon Septoria lycopersici",
+      "Éclaboussures d'eau",
+      "Débris végétaux infectés",
+      "Temps chaud et humide"
+    ],
+    "symptoms": [
+      "Nombreuses petites taches rondes",
+      "Centre gris avec bordure brune",
+      "Points noirs au centre (pycnides)",
+      "Jaunissement et chute des feuilles"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif",
+          "dosage": "20g/L d'eau"
+        },
+        {
+          "name": "Paillage",
+          "description": "Éviter les éclaboussures",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide chlorothalonil",
+          "description": "Traitement curatif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les feuilles basses infectées",
+      "Pailler le sol",
+      "Éviter l'arrosage par aspersion"
+    ],
+    "follow_up_days": 10
+  },
+  "Tomato___Spider_mites_Two-spotted_spider_mite": {
+    "id": "tomato_spider_mites",
+    "name": "Acariens de la tomate",
+    "plant": "Tomate",
+    "plant_id": "tomato",
+    "is_healthy": false,
+    "description": "Les acariens tétranyques (Tetranychus urticae) sont de minuscules arachnides qui sucent la sève des feuilles.",
+    "causes": [
+      "Acarien Tetranychus urticae",
+      "Temps chaud et sec",
+      "Air sec",
+      "Utilisation d'insecticides (tue les prédateurs)"
+    ],
+    "symptoms": [
+      "Fines marbrures jaunes sur les feuilles",
+      "Toiles fines sous les feuilles",
+      "Feuilles bronzées puis desséchées",
+      "Minuscules points mobiles (acariens)"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Savon noir",
+          "description": "Pulvériser sur les foyers",
+          "dosage": "30g/L d'eau"
+        },
+        {
+          "name": "Acariens prédateurs",
+          "description": "Phytoseiulus persimilis",
+          "dosage": "Selon fournisseur"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Acaricide spécifique",
+          "description": "En dernier recours",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Augmenter l'humidité ambiante",
+      "Pulvériser de l'eau sur les feuilles",
+      "Retirer les feuilles très atteintes"
+    ],
+    "follow_up_days": 5
+  },
+  "Tomato___Target_Spot": {
+    "id": "tomato_target_spot",
+    "name": "Maladie des taches en cible",
+    "plant": "Tomate",
+    "plant_id": "tomato",
+    "is_healthy": false,
+    "description": "Cette maladie est causée par Corynespora cassiicola. Elle provoque des taches concentriques sur les feuilles.",
+    "causes": [
+      "Champignon Corynespora cassiicola",
+      "Temps chaud et humide",
+      "Éclaboussures",
+      "Débris infectés"
+    ],
+    "symptoms": [
+      "Taches brunes avec anneaux concentriques",
+      "Aspect en cible",
+      "Taches sur tiges et fruits",
+      "Défoliation"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Bouillie bordelaise",
+          "description": "Traitement préventif",
+          "dosage": "20g/L d'eau"
+        },
+        {
+          "name": "Rotation des cultures",
+          "description": "2-3 ans",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Fongicide à large spectre",
+          "description": "Traitement curatif",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Retirer les parties infectées",
+      "Améliorer l'aération",
+      "Pailler le sol"
+    ],
+    "follow_up_days": 10
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "id": "tomato_tylcv",
+    "name": "Virus de l'enroulement jaune",
+    "plant": "Tomate",
+    "plant_id": "tomato",
+    "is_healthy": false,
+    "description": "Le TYLCV est un virus transmis par l'aleurode Bemisia tabaci. Il n'existe pas de traitement curatif.",
+    "causes": [
+      "Begomovirus (TYLCV)",
+      "Transmission par aleurodes",
+      "Plants infectés",
+      "Mauvaises herbes réservoirs"
+    ],
+    "symptoms": [
+      "Enroulement des feuilles vers le haut",
+      "Jaunissement des bords",
+      "Nanisme",
+      "Fleurs qui avortent"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Contrôle des aleurodes",
+          "description": "Piégeage et voiles",
+          "dosage": "N/A"
+        },
+        {
+          "name": "Arrachage des plants infectés",
+          "description": "Éviter la propagation",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Insecticide contre aleurodes",
+          "description": "Contrôle du vecteur",
+          "dosage": "Selon les instructions du fabricant"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Arracher les plants infectés",
+      "Contrôler les aleurodes",
+      "Désherber autour des cultures"
+    ],
+    "follow_up_days": 7
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "id": "tomato_mosaic",
+    "name": "Virus de la mosaïque de la tomate",
+    "plant": "Tomate",
+    "plant_id": "tomato",
+    "is_healthy": false,
+    "description": "Le ToMV est un virus très contagieux transmis mécaniquement. Il n'existe pas de traitement curatif.",
+    "causes": [
+      "Tobamovirus (ToMV)",
+      "Transmission par contact",
+      "Outils contaminés",
+      "Semences infectées"
+    ],
+    "symptoms": [
+      "Mosaïque de vert clair et foncé",
+      "Déformation des feuilles",
+      "Feuilles filiformes (fern-leaf)",
+      "Fruits marbrés"
+    ],
+    "treatments": {
+      "bio": [
+        {
+          "name": "Désinfection des outils",
+          "description": "Lait écrémé ou eau de Javel",
+          "dosage": "N/A"
+        },
+        {
+          "name": "Arrachage des plants infectés",
+          "description": "Limiter la propagation",
+          "dosage": "N/A"
+        }
+      ],
+      "chemical": [
+        {
+          "name": "Aucun traitement efficace",
+          "description": "Prévention uniquement",
+          "dosage": "N/A"
+        }
+      ]
+    },
+    "immediate_actions": [
+      "Ne plus toucher les plants sains",
+      "Désinfecter les mains et outils",
+      "Arracher les plants infectés"
+    ],
+    "follow_up_days": 7
+  },
+  "Tomato___healthy": {
+    "id": "tomato_healthy",
+    "name": "Tomate saine",
+    "plant": "Tomate",
+    "plant_id": "tomato",
+    "is_healthy": true,
+    "description": "Votre plant de tomate est en bonne santé!",
+    "causes": [],
+    "symptoms": [],
+    "treatments": {
+      "bio": [],
+      "chemical": []
+    },
+    "immediate_actions": [],
+    "follow_up_days": 30
+  }
+}

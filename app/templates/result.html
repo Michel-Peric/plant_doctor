@@ -1,0 +1,265 @@
+{% extends "base.html" %}
+
+{% block title %}Resultat du Diagnostic - Plant Doctor{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-12 col-lg-10">
+        <!-- Result Container -->
+        <div id="result-container">
+            <!-- Loading State -->
+            <div id="result-loading" class="text-center py-5">
+                <div class="spinner-border text-primary mb-3" role="status">
+                    <span class="visually-hidden">Chargement...</span>
+                </div>
+                <p class="text-muted">Chargement des resultats...</p>
+            </div>
+
+            <!-- No Result State -->
+            <div id="no-result" class="text-center py-5" style="display: none;">
+                <i class="bi bi-exclamation-circle text-warning display-4 mb-3"></i>
+                <h2 class="h4 mb-3">Aucun resultat disponible</h2>
+                <p class="text-muted mb-4">Veuillez d'abord analyser une image de plante.</p>
+                <a href="{{ url_for('main.index') }}" class="btn btn-primary">
+                    <i class="bi bi-camera me-2"></i>Analyser une image
+                </a>
+            </div>
+
+            <!-- Result Content -->
+            <div id="result-content" style="display: none;">
+                <!-- Image and Summary Row -->
+                <div class="row g-4 mb-4">
+                    <!-- Image Column -->
+                    <div class="col-12 col-md-5">
+                        <div class="card h-100">
+                            <div class="card-body p-3">
+                                <div class="image-container position-relative">
+                                    <img id="result-image" src="" alt="Image analysee" class="img-fluid rounded">
+                                    <img id="heatmap-overlay" src="" alt="Heatmap"
+                                        class="img-fluid rounded heatmap-overlay"
+                                        style="display: none; opacity: 0.6; mix-blend-mode: normal;">
+
+                                    <!-- Heatmap Toggle Controls -->
+                                    <div id="heatmap-controls"
+                                        class="position-absolute bottom-0 start-0 w-100 p-2 justify-content-center"
+                                        style="display: none; background: rgba(0,0,0,0.6); border-bottom-left-radius: var(--bs-border-radius); border-bottom-right-radius: var(--bs-border-radius);">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="heatmap-toggle" checked>
+                                            <label class="form-check-label text-white small fw-bold"
+                                                for="heatmap-toggle">Afficher l'explication</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Summary Column -->
+                    <div class="col-12 col-md-7">
+                        <div class="card h-100">
+                            <div class="card-header bg-white">
+                                <h1 class="h5 mb-0">
+                                    <i class="bi bi-clipboard2-pulse me-2 text-primary"></i>
+                                    Resultat du diagnostic
+                                </h1>
+                            </div>
+                            <div class="card-body">
+                                <!-- Uncertainty Alert -->
+                                <div id="uncertainty-alert" class="alert alert-warning border-warning mb-3" role="alert"
+                                    style="display: none;">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-exclamation-triangle-fill fs-4 me-3"></i>
+                                        <div>
+                                            <h6 class="alert-heading fw-bold mb-1">Diagnostic Incertain</h6>
+                                            <p class="mb-0 small">La confiance du modèle est faible (<span
+                                                    id="alert-confidence-value"></span>). Le résultat peut être
+                                                incorrect.</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="small">
+                                        <p class="mb-1 fw-semibold">Conseils pour améliorer la précision :</p>
+                                        <ul class="mb-2 ps-3">
+                                            <li>Cadrez une <strong>feuille unique</strong> et bien éclairée.</li>
+                                            <li>Évitez les fruits, les tiges multiples ou l'arrière-plan chargé.</li>
+                                            <li>Approchez-vous suffisamment de la feuille.</li>
+                                        </ul>
+                                        <a href="{{ url_for('main.index') }}"
+                                            class="btn btn-sm btn-outline-warning text-dark w-100 mt-2">
+                                            <i class="bi bi-camera me-2"></i>Reprendre une photo
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Status Badge -->
+                                <div id="status-badge" class="mb-3"></div>
+
+                                <!-- Plant Info -->
+                                <div class="mb-3">
+                                    <small class="text-muted d-block">Plante</small>
+                                    <span id="plant-name" class="fw-semibold fs-5">-</span>
+                                </div>
+
+                                <!-- Disease Info -->
+                                <div class="mb-3">
+                                    <small class="text-muted d-block">Diagnostic</small>
+                                    <span id="disease-name" class="fw-semibold fs-5">-</span>
+                                </div>
+
+                                <!-- Confidence -->
+                                <div class="mb-3">
+                                    <small class="text-muted d-block mb-1">Confiance</small>
+                                    <div class="d-flex align-items-center">
+                                        <div class="progress flex-grow-1 me-2" style="height: 8px;">
+                                            <div id="confidence-bar" class="progress-bar" role="progressbar"
+                                                style="width: 0%"></div>
+                                        </div>
+                                        <span id="confidence-value" class="fw-semibold">0%</span>
+                                    </div>
+                                    <small id="confidence-warning" class="text-warning" style="display: none;">
+                                        <i class="bi bi-exclamation-triangle me-1"></i>
+                                        Confiance faible - resultats a interpreter avec prudence
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Disease Details Tabs -->
+                <div id="result-details" class="card" style="display: none;">
+                    <div class="card-header bg-white border-bottom-0 pt-3 pb-0 px-3">
+                        <ul class="nav nav-tabs" id="diseaseTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="details-tab" data-bs-toggle="tab"
+                                    data-bs-target="#details-pane" type="button" role="tab" aria-controls="details-pane"
+                                    aria-selected="true">
+                                    <i class="bi bi-info-circle me-2"></i>Détails
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="symptoms-tab" data-bs-toggle="tab"
+                                    data-bs-target="#symptoms-pane" type="button" role="tab"
+                                    aria-controls="symptoms-pane" aria-selected="false">
+                                    <i class="bi bi-eye me-2"></i>Symptômes
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="treatments-tab" data-bs-toggle="tab"
+                                    data-bs-target="#treatments-pane" type="button" role="tab"
+                                    aria-controls="treatments-pane" aria-selected="false">
+                                    <i class="bi bi-bandaid me-2"></i>Traitements
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="prevention-tab" data-bs-toggle="tab"
+                                    data-bs-target="#prevention-pane" type="button" role="tab"
+                                    aria-controls="prevention-pane" aria-selected="false">
+                                    <i class="bi bi-shield-check me-2"></i>Prévention
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="tab-content" id="diseaseTabsContent">
+                            <!-- Tab 1: Détails (Description, Causes) -->
+                            <div class="tab-pane fade show active" id="details-pane" role="tabpanel"
+                                aria-labelledby="details-tab" tabindex="0">
+                                <h5 class="card-title text-primary mb-3">À propos de cette maladie</h5>
+                                <p id="disease-description" class="card-text text-justify mb-4">-</p>
+
+                                <h5 class="card-title text-secondary mb-3"><i class="bi bi-search me-2"></i>Causes
+                                    probables</h5>
+                                <ul id="causes-list" class="list-group list-group-flush rounded mb-3"></ul>
+                            </div>
+
+                            <!-- Tab 2: Symptômes -->
+                            <div class="tab-pane fade" id="symptoms-pane" role="tabpanel" aria-labelledby="symptoms-tab"
+                                tabindex="0">
+                                <h5 class="card-title text-warning mb-3">Signes à observer</h5>
+                                <ul id="symptoms-list" class="list-group list-group-flush rounded"></ul>
+                            </div>
+
+                            <!-- Tab 3: Traitements -->
+                            <div class="tab-pane fade" id="treatments-pane" role="tabpanel"
+                                aria-labelledby="treatments-tab" tabindex="0">
+                                <!-- Actions Immédiates -->
+                                <div class="alert alert-danger mb-4">
+                                    <h6 class="alert-heading fw-bold"><i class="bi bi-lightning-fill me-2"></i>Actions
+                                        urgentes</h6>
+                                    <ul id="actions-list" class="mb-0 ps-3 small"></ul>
+                                </div>
+
+                                <!-- Traitements Bio -->
+                                <h6 class="text-success fw-bold mb-3"><i class="bi bi-leaf me-2"></i>Solutions
+                                    Biologiques (Recommandées)</h6>
+                                <div id="bio-treatments" class="mb-4"></div>
+
+                                <!-- Traitements Chimiques -->
+                                <h6 class="text-secondary fw-bold mb-3"><i class="bi bi-droplet me-2"></i>Solutions
+                                    Chimiques (Si nécessaire)</h6>
+                                <div id="chemical-treatments" class="mb-4"></div>
+                            </div>
+
+                            <!-- Tab 4: Prévention / Suivi -->
+                            <div class="tab-pane fade" id="prevention-pane" role="tabpanel"
+                                aria-labelledby="prevention-tab" tabindex="0">
+                                <!-- Healthy Plant Case -->
+                                <div id="healthy-content" style="display: none;">
+                                    <div class="alert alert-success mb-4">
+                                        <h6 class="alert-heading"><i class="bi bi-check-circle-fill me-2"></i>Votre
+                                            plante va bien !</h6>
+                                        <p class="mb-0">Continuez les bons gestes pour la maintenir en santé.</p>
+                                    </div>
+                                    <h6 class="fw-bold mb-3">Conseils d'entretien :</h6>
+                                    <ul id="healthy-tips-list" class="list-group list-group-flush rounded mb-3"></ul>
+                                </div>
+
+                                <!-- Sick Plant Case -->
+                                <div id="sick-prevention-content">
+                                    <h5 class="card-title text-success mb-3">Comment éviter le retour ?</h5>
+                                    <ul id="prevention-tips" class="list-group list-group-flush rounded mb-4"></ul>
+
+                                    <div class="card bg-light border-0">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-primary"><i
+                                                    class="bi bi-calendar-check me-2"></i>Suivi recommandé</h6>
+                                            <p class="mb-0">
+                                                Vérifiez l'évolution de la plante dans <strong
+                                                    id="follow-up-days">14</strong> jours.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
+                    <a href="{{ url_for('main.index') }}" class="btn btn-primary">
+                        <i class="bi bi-camera me-2"></i>Nouvelle analyse
+                    </a>
+                    <a href="{{ url_for('main.history') }}" class="btn btn-outline-secondary">
+                        <i class="bi bi-clock-history me-2"></i>Voir l'historique
+                    </a>
+                    <button id="btn-explain" class="btn btn-info text-white" style="display: none;">
+                        <i class="bi bi-magic me-2"></i>Voir l'explication
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Inject server-side data if available (for History Details)
+    {% if diagnosis_data %}
+    window.serverDiagnosisData = {{ diagnosis_data | tojson | safe }};
+    {% endif %}
+</script>
+<script src="{{ url_for('static', filename='js/result.js') }}"></script>
+{% endblock %}
