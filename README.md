@@ -2,6 +2,12 @@
 
 Application web de diagnostic de maladies des plantes utilisant le deep learning. Upload une photo de feuille et obtiens un diagnostic instantane avec des recommandations de traitement.
 
+## Screenshots
+
+| Accueil | Diagnostic | Historique |
+|---------|------------|------------|
+| ![Accueil](screenshots/accueil.png) | ![Diagnostic](screenshots/appli.png) | ![Historique](screenshots/historique.png) |
+
 ## Fonctionnalites
 
 - **Diagnostic par image** : Upload ou capture de photos de feuilles
